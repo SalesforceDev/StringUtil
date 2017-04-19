@@ -2,8 +2,8 @@
 
 The following are methods for StringUtil.
 
-###match(lengthContent, shortContent, ignoreCase)
-Returns a Boolean that represents the specified Date in the standard “yyyy-MM-dd” format.
+### match(lengthContent, shortContent, ignoreCase)
+The shortContent is a word or in a word, if the lengthContent contains the shortContent, so returns true.
 
 Signature
 public static Boolean match(String lengthContent, String shortContent, Boolean ignoreCase)
@@ -23,6 +23,7 @@ Return Value
 Type: Boolean
 ```java
 System.assert(StringUtil.match('This is a test record.', 'record', true), true);
+System.assert(StringUtil.match('This is a test record.', 'reco', true), false);
 ```
 Example
 
