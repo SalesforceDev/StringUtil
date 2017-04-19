@@ -2,30 +2,16 @@
 
 The following are methods for StringUtil.
 
-### match(lengthContent, shortContent, ignoreCase)
+### match(String lengthContent, String shortContent, Boolean ignoreCase)
 The shortContent is a word or in a word, if the lengthContent contains the shortContent, so returns true.
 
-Signature
-public static Boolean match(String lengthContent, String shortContent, Boolean ignoreCase)
+### Example
 
-Parameters
-
-lengthContent
-Type: String
-
-shortContent
-Type: String
-
-ignoreCase
-Type: Boolean
-
-Return Value
-Type: Boolean
 ```java
 System.assert(StringUtil.match('This is a test record.', 'record', true), true);
 System.assert(StringUtil.match('This is a test record.', 'reco', true), false);
 ```
-Example
+
 
 ## Donation
 If this project help you reduce time to develop, you can give me a cup of coffee :) 
